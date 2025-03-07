@@ -18,7 +18,7 @@ public class ConfigurationManager {
         }
         return instance;
     }
-
+//creating object like singleton.
     private void loadConfigurations() {
         configSettings.put("maxPlayers", "100");
         configSettings.put("defaultLanguage", "en");
