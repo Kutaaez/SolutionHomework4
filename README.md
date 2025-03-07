@@ -29,12 +29,12 @@ Notes:
 
 ## Part 2: Chat Service Adapter (Adapter Pattern)  
 
-### 🎯 GOALS:  
+### GOALS:  
 - Integrate a **legacy chat system** with a new application.  
 - Use the **Adapter Pattern** to make the legacy chat service compatible with the new interface.  
 - Ensure that messages sent via the new interface are correctly translated to the legacy system format.  
 
-### 📂 Data structure:  
+### Data structure:  
 ```plaintext
  chat/
          ├── LegacyChatService.java
