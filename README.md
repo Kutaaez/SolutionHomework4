@@ -1,25 +1,22 @@
-# ** HomeWork 4. **
-## ** Singleton and Adapter patterns. **
+# HomeWork 4  
+## Singleton and Adapter Patterns  
 
-## Part 1: Global Configuration Manager (Singleton Pattern)
-## GOALS:
+## Part 1: Global Configuration Manager (Singleton Pattern)  
 
-### Implement a configuration manager that ensures that only one instance of it exists in an application.
+###  Goals:  
+- Implement a **configuration manager** that ensures only **one instance** exists in an application.  
 - Create a **centralized configuration manager** that stores key-value pairs.  
-- Ensure **only one instance** is created using **lazy initialization**.  
-- Provide methods to **retrieve configuration values** and **display all settings**.
-### Data structure:
- config/
-         ├── ConfigurationManager.java
-                 - Implements the **Singleton pattern** with lazy initialization.  
-                 - Provides:
-                          * `getConfig(String key)`: Retrieves a value by key.  
-                          * `printAllConfigs()`: Displays all settings.  
-         ├── ConfigManagerDemo.java
-                - Demonstrates **singleton behavior** by accessing the same instance multiple times.  
-                - Retrieves and prints configurations.  
+- Ensure **lazy initialization** for instance creation.  
+- Provide methods to **retrieve configuration values** and **display all settings**.  
 
-###        Notes:
-        - Uses lazy initialization to create the instance only when needed.
-        - Ensures a single global access point to configuration settings.
-        - Follows SOLID principles for maintainability.
+###  Project Structure:  
+config/ ├── ConfigurationManager.java │ ├── Implements the Singleton pattern with lazy initialization.
+│ ├── Provides: │ │ - getConfig(String key): Retrieves a value by key.
+│ │ - printAllConfigs(): Displays all settings.
+├── ConfigManagerDemo.java │ ├── Demonstrates singleton behavior by accessing the same instance multiple times.
+│ ├── Retrieves and prints configurations.
+
+### Notes:
+Uses lazy initialization to create the instance only when needed.
+Ensures a single global access point to configuration settings.
+Follows SOLID principles for maintainability.
