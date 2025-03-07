@@ -21,6 +21,31 @@
                 - Retrieves and prints configurations.
 ```
 ```plaintext
+
+## Installation and Execution Instructions  
+#### **Requirements:**  
+- Java 8 or later  
+- Terminal or any Java IDE (IntelliJ IDEA, Eclipse, VS Code)  
+
+#### **Compilation & Execution:**  
+1. Navigate to the project directory.  
+2. Compile the files:  
+   ```sh
+   javac config/ConfigurationManager.java config/ConfigManagerDemo.java
+   ```
+3. run the demo
+   ```sh
+   java config.ConfigManagerDemo
+   ```
+***Expected Output:***
+```plaintext
+        Max Players: 100
+        Default Language: en
+        Current Configurations:
+        maxPlayers = 100
+        defaultLanguage = en
+        gameDifficulty = medium
+```
 Notes:
         - Uses lazy initialization to create the instance only when needed.
         - Ensures a single global access point to configuration settings.
@@ -54,6 +79,23 @@ Notes:
          ├── ChatAdapterDemo.java
                  - Demonstrates how the adapter makes `LegacyChatService` compatible with `ChatService`.
                  - Sends a message using the new interface and produces expected output.
+```
+## Installation and Execution Instructions  
+#### **Requirements:**  
+- Java 8 or later  
+- Terminal or any Java IDE (IntelliJ IDEA, Eclipse, VS Code)  
+
+#### **Compilation & Execution:**  
+1. Navigate to the project directory.  
+2. Compile the files:  
+   ```sh
+   javac chat/LegacyChatService.java chat/ChatService.java chat/ChatServiceAdapter.java chat/ChatAdapterDemo.java
+3. run the demo
+   ```sh
+   java chat.ChatAdapterDemo
+***Expected Output:***
+```plaintext
+            Legacy Chat: Hello world!
 ```
 ```plaintext
 Notes:
