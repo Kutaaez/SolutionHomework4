@@ -20,7 +20,6 @@
                 - Demonstrates **singleton behavior** by accessing the same instance multiple times.  
                 - Retrieves and prints configurations.
 ```
-```plaintext
 
 ## Installation and Execution Instructions  
 #### **Requirements:**  
@@ -46,6 +45,7 @@
         defaultLanguage = en
         gameDifficulty = medium
 ```
+```plaintext
 Notes:
         - Uses lazy initialization to create the instance only when needed.
         - Ensures a single global access point to configuration settings.
